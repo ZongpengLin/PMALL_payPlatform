@@ -26,6 +26,7 @@ public enum PayPlatformEnum {
 //        }else if (bestPayTypeEnum.getPlatform().name().equals(PayPlatformEnum.WX.name())){
 //            return PayPlatformEnum.WX;
 //        }
+        // 优化
         for (PayPlatformEnum payPlatformEnum : PayPlatformEnum.values()){
             if (bestPayTypeEnum.getPlatform().name().equals(payPlatformEnum.name())){
                 return payPlatformEnum;

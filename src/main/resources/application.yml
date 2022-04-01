@@ -1,9 +1,15 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 123456a
+    username: 
+    password: 
     url: jdbc:mysql://127.0.0.1:3306/mall?chracterEncoding=utf8&useSSL=false
+  #  配置 MQ 地址
+  rabbitmq:
+    addresses: 127.0.0.1
+    port: 5672
+    username: 
+    password: 
 
 mybatis:
   configuration:
@@ -15,5 +21,23 @@ mybatis:
 logging:
   pattern:
     console: "[%thread] %-5level %logger{36} - %msg%n"
+
+wx:
+  appId: 
+  mchId: 
+  mchKey: 
+  notifyUrl: 
+  returnUrl: 
+
+alipay:
+  appId: 
+  privateKey: 
+  aliPayPublicKey: 
+  notifyUrl: 
+  returnUrl: 
+
+
+
+
 
 

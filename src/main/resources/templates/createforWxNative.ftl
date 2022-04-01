@@ -24,12 +24,13 @@
                 url: '/pay/queryByOrderId',
                 data: {
                     //如何获取这个orderId ,参考 ${codeUrl},使用模版渲染的方式;
-                    'orderId': $('#orderId').text()
+                    'orderId':$('#orderId').text()
                 },
                 success: function (result){
                     console.log(result)
                     if(result.platformStatus != null
                        && result.platformStatus === 'SUCCESS'){
+                        //发生跳转的地址！
                         location.href = $('#returnUrl').text()
                     }
                 },

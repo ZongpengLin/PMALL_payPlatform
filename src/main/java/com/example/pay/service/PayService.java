@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  * created by tony
  */
 
-public interface IPayService {
+public interface PayService {
     /**
      * 创建/发起支付
      */
